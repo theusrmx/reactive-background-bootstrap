@@ -1,0 +1,176 @@
+body{
+  height: 100vh;
+  display: block;
+  background-color: #1e1e1e;
+}
+
+.poster-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem;
+}
+
+.poster-container img{
+  max-width: 21.8rem;
+  max-height: 37.5rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.25rem;
+}
+
+.btn-poster{
+  background-color:#d83333;
+  border-radius:1.5rem;
+  border: none;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:1.25rem;
+  padding:0.75rem 3rem;
+  margin-bottom: 0.6rem;
+  text-decoration:none;
+}
+
+.btn-poster:hover {
+  background-color:#f24437;
+}
+  
+.btn-poster:active {
+  position:relative;
+  top:0.06rem;
+}
+
+.btn-poster:focus {
+  outline: none;
+}
+
+.poster-info i{
+  font-size: 1.5rem;
+  color: #ffffff;
+  padding: 1rem 0 1rem 0;
+}
+
+.poster-info p{
+  font-size: 1rem;
+  color: #ffffff;
+
+}
+
+.movie-info-container{
+  margin: 1.5rem;
+}
+
+.movie-info-container h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.rating {
+  width: 100%;
+  font-size: 1.875rem;
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+.rating__star {
+  cursor: pointer;
+  color: #D83333;
+}
+
+.box-review {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1.25rem;
+  height: 100%;
+  width: 100%; 
+}
+
+.box-review h3 {
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+
+.textarea-container textarea{
+  padding: 1.25rem;
+  height: 11.25rem;
+  width: 37.9375rem;
+  max-width: 100%;
+  box-sizing: border-box;
+
+  font-size: 16px;
+  border-width: 1px;
+  border-color: #d83333;
+  color: #ffffff;
+  border-style: solid;
+  border-radius: 33px;
+  background-color: rgba(0, 0, 0, 0.5);
+  resize: none;
+
+}
+
+.textarea-container textarea:focus {
+  outline:none;
+}
+
+
+.textarea-container button{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  background-color: #d83333;
+  color: white;
+  border: none;
+  padding: 0.3rem;
+  font-size: 2rem;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 70%;
+}
+
+.textarea-container button:active {
+  background-color: #d83333;
+  transform: translateY(2px);
+}
+
+.sinopse-box{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1.25rem;
+}
+
+
+.sinopse-box h4 {
+  color: #FFF;
+  font-size:  1rem;
+}
+
+
+.sinopse-box p {
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: justify;
+}
+
+.more-info p{
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.more-info i{
+  font-size: 1.5rem;
+  color: #ffffff;
+  padding: 1rem 0 1rem 0;
+}
