@@ -13,7 +13,6 @@ image.onload = function() {
   gradient.style.background = `radial-gradient(ellipse at top left, rgb(${R2}, ${G2}, ${B2}), rgb(${R1}, ${G1}, ${B1}), #1e1e1e 70%)`;
 };
 
-
 const ratingStars = [...document.getElementsByClassName("rating__star")];
 
 function executeRating(stars) {

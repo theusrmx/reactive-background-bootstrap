@@ -10,23 +10,28 @@
   <title>Reactive Background</title>
 </head>
 <body>
-
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-6 gradient">
         
         <div class="poster-container">
-          <img src="https://m.media-amazon.com/images/M/MV5BOWIwZGY0OTYtZjUzYy00NzRmLTg5YzgtYWMzNWQ0MmZiY2MwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1000_.jpg" alt="poster" class="img-fluid" crossorigin="anonymous">
+          <img id="movie-poster" src="" alt="poster" class="img-fluid" crossorigin="anonymous">
           <div class="poster-info text-center">
     
             <ul class="list-unstyled d-flex justify-content-center align-items-center mt-3">
+
               <li class="mx-3">
-                <i class="fa-solid fa-eye"></i>
-                <p>10.8M</p>
+                <i class="fa-solid fa-star" style="color: rgb(241, 241, 13);"></i>
+                <p id="rating"></p>
+              </li>
+
+              <li class="mx-3">
+                <i class="fa-solid fa-eye" style="color: rgb(2, 207, 2);"></i>
+                <p id="views">10.8M</p>
               </li>
               <li class="mx-3">
-                <i class="fa-solid fa-heart"></i>
-                <p>10.8M</p>
+                <i class="fa-solid fa-heart" style="color: rgb(255, 81, 81);"></i>
+                <p id="likes">10.8M</p>
               </li>
             </ul>
           </div>
@@ -37,7 +42,7 @@
       <div class="col-md-6">
 
         <div class="movie-info-container text-center">
-          <h1>Barbie</h1>
+          <h1 id="movie-title"></h1>
       
           <div class="rating">
             <i class="rating__star far fa-star"></i>
@@ -57,9 +62,8 @@
       
           <div class="sinopse-box container-fluid mt-4">
             <h4 class="mb-3">Sinopse</h4>
-            <p>
-              Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, 
-              Barbie parte para o mundo humano em busca da verdadeira felicidade.
+            <p id="sinopse">
+              
             </p>
             
             
@@ -70,18 +74,19 @@
   
                 <li class="mx-3">
                   <i class="fa-solid fa-calendar"></i>
-                  <p>2023</p>
+                  <p id="release-year"></p>
                 </li>
                 
                 <li class="mx-3">
                   <i class="fa-solid fa-film"></i>
-                  <p>Comédia</p>
+                  <p id="genre"></p>
                 </li>
 
                 <li class="mx-3">
                   <i class="fa-solid fa-clock"></i>
-                  <p>1h52m</p>
+                  <p id="duration"></p>
                 </li>
+
               </ul>
             </div>
         </div>
@@ -94,5 +99,6 @@
   
   
   <script src="./scripts.js"></script>
+  <script src="movies_api.js"></script>
 </body>
 </html>
